@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Musician</title>
+		<script type="text/javascript" src="./src/Tone.js"></script>
+		<script type="text/javascript" src="./src/yourClass.js"></script>
+		<script type="text/javascript" src="./src/nexusUI.js"></script>
+	</head>
+	<body >
+	
+		<canvas nx="mouse" id="mousey"></canvas>
+		<script type="text/javascript">	
+
+		var class01  = new YourClass();
+
+		nx.onload = function(){
+
+			mousey.on("x", function(x){
+				
+				class01.locationX = x;
+				class01.seventhCalc();
+
+				
+				
+			});
+			mousey.on("y", function(y){
+				
+				class01.locationY = y;
+				class01.thirdCalc();
+				
+			});
+
+
+		};	
+		
+
+	
+		
+
+		
+			
+			
+
+
+
+		</script>
+	</body>
+</html> 
